@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dreamwest.rev_inflatelayout.MainActivity">
+
+    <FrameLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/framelayout_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_below="@id/framelayout_view"
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="我是主视图" />
+
+    <EditText
+        android:layout_below="@id/tv"
+        android:id="@+id/edit_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_main"
+        android:layout_below="@id/edit_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击提交"
+        />
+
+
+</RelativeLayout>
